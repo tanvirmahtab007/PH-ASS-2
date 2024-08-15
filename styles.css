@@ -1,0 +1,440 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background-color: #111111;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Header */
+header {
+    background-color: #1a1a1a;
+    padding: 20px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #ff5733;
+    text-decoration: none;
+}
+
+.nav-dddd {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    background-color: #222; /* ব্যাকগ্রাউন্ড কালার */
+    border-radius: 30px;
+    list-style: none;
+    
+    
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.header-text {
+    max-width: 600px;
+}
+
+.header-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.header-text span {
+    color: #ff5733;
+    font-style: italic;
+}
+
+.btn-group {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 10px 20px;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: #ff5733;
+}
+
+.btn-secondary {
+    background-color: #555555;
+}
+
+.video-info {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.video-info span {
+    font-size: 2rem;
+    color: #ff5733;
+}
+
+.header-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Habits Section */
+.habits {
+    padding: 50px 0;
+    background-color: #222222;
+}
+
+.habits h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.habits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.habit-item {
+    text-align: center;
+}
+
+.habit-item img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.habit-item h3 {
+    font-size: 1.2rem;
+    color: #ff5733;
+}
+
+/* Extra Mile Section */
+.extra-mile {
+    background-color: #1a1a1a;
+    padding: 50px 0;
+}
+
+.extra-mile-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.extra-mile-text {
+    max-width: 500px;
+}
+
+.extra-mile-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.extra-mile-text p {
+    margin-bottom: 20px;
+}
+
+.extra-mile-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Trainings Section */
+.trainings {
+    padding: 50px 0;
+    background-color: #222222;
+}
+
+.trainings h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.trainings-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.training-item {
+    text-align: center;
+}
+
+.training-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* BMI Calculator Section */
+.bmi-calculator {
+    background-color: #1a1a1a;
+    padding: 50px 0;
+}
+
+.bmi-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.bmi-chart table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.bmi-chart table, .bmi-chart th, .bmi-chart td {
+    border: 1px solid #555555;
+    padding: 10px;
+}
+
+.bmi-chart th {
+    background-color: #ff5733;
+}
+
+.bmi-form input, .bmi-form select, .bmi-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.bmi-form button {
+    background-color: #ff5733;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* Team Section */
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between team members */
+    flex-wrap: wrap; /* Wrap members to next row if screen is small */
+    background-color: #1c1c1c; /* Background color */
+    padding: 20px;
+}
+
+.team-member {
+    background-color: #2d2d2d; /* Card background color */
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; /* Hide overflowing content */
+    text-align: center;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    width: 250px; /* Card width */
+    margin: 10px; /* Margin around each card */
+}
+
+.team-member img {
+    width: 100%; /* Image width 100% of card */
+    height: auto; /* Automatic height */
+    object-fit: cover; /* Cover image within container */
+}
+
+.team-member .name {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.team-member .title {
+    font-size: 16px;
+    color: #f44336; /* Title color */
+    margin-bottom: 10px;
+}
+
+.team-heading {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.team-heading h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.team-heading p {
+    font-size: 16px;
+    color: #aaa;
+}
+
+
+
+/* Footer */
+.footer {
+    background-color: #1c1c1c; /* Background color */
+    color: #aaa; /* Text color */
+    padding: 40px 20px; /* Padding around the footer */
+    display: flex;
+    justify-content: space-between; /* Space between columns */
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: wrap; /* Wrap on smaller screens */
+    gap: 30px; /* Space between columns (Optional) */
+    justify-content: center;
+
+}
+
+.footer-logo {
+    font-size: 36px;
+    color: #f44336; /* Logo color */
+    font-weight: bold;
+    margin-bottom: 5px; /* Reduced margin-bottom */
+}
+
+.footer p {
+    max-width: 300px;
+    line-height: 1.5;
+    font-size: 14px;
+    margin-bottom: 10px; /* Reduced margin-bottom */
+    color: #aaa; /* Paragraph text color */
+    justify-content: center;
+
+}
+
+.footer h4 {
+    color: white; /* Header text color */
+    font-size: 18px;
+    margin-bottom: 5px; /* Reduced margin-bottom */
+    font-weight: bold;
+    justify-content: center;
+
+}
+
+.footer ul {
+    list-style: none; /* Remove list bullets */
+    padding: 0;
+    margin: 0; /* Remove default margin */
+    justify-content: center;
+
+}
+
+.footer ul li {
+    margin-bottom: 5px; /* Reduced space between items */
+    font-size: 14px;
+}
+
+.footer ul li a {
+    color: #aaa; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s;
+    justify-content: center;
+
+}
+
+.footer ul li a:hover {
+    color: #f44336; /* Hover effect */
+    justify-content: center;
+
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px; /* Reduced padding-top */
+    border-top: 1px solid #333; /* Top border */
+    margin-top: 10px; /* Reduced margin-top */
+    font-size: 12px;
+    color: #777; /* Bottom text color */
+    width: 100%;
+}
+
+.bm{
+    text-align: center;
+    font-size: 80px;
+}
+.bm1{
+    text-align: center;
+}
+
+/*button hover*/
+
+ul li a{
+    padding: 15px;
+    text-decoration: none;
+    display: inline-block;
+    color: #fcfcfc;
+}
+nav{
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+ul{
+    display: inline-flex;
+    list-style: none;
+}
+ul li a.active, ul li a:hover{
+    background: #FF6D00;
+    color: #ffffff;
+    border-radius: 6px;
+
+    }
+
+    .btn-bam {
+        display: flex;
+        justify-content: flex-end; /* বাটনগুলোকে ডান পাশে নিয়ে যাবে */
+        align-items: center;
+        padding: 10px;
+        background-color: #222; /* ব্যাকগ্রাউন্ড কালার */
+        border-radius: 30px;
+        list-style: none;
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+.id1{
+    display: grid;
+}
+.id2{
+    display: grid;
+}
